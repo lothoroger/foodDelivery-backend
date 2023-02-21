@@ -10,7 +10,7 @@ pipeline {
 			
 			//Run maven wrapper - 2/20
 			//bat  "mvn compile"
-			sh "./mvwn compile"
+			sh "mvn compile"
 			echo 'Building the Food Delivery Project with Maven compiler'			
 			       }
 		               }
@@ -18,7 +18,7 @@ pipeline {
 		stage('Test') {
 			steps {
 			//bat 'mvn test'
-			sh "./mvwn test"
+			sh "mvn test"
 			echo 'Testing the Food Delivery project with Maven test'
 			  }
 			       }
@@ -26,7 +26,7 @@ pipeline {
 		stage('Deploy') {
 			steps {
 			//bat 'mvn package'
-			sh "./mvwn package"
+			sh "mvn package"
 			echo 'Deploy the Food Delivery project with Maven package'
 				  }			
 						}
