@@ -10,7 +10,7 @@ pipeline {
 			
 			//Run maven wrapper - 2/20
 			//bat  "mvn compile"
-			sh ",/mvnw compile"
+			sh "./mvnw compile"
 			echo 'Building the Food Delivery Project with Maven compiler'			
 			       }
 		               }
