@@ -6,7 +6,7 @@ pipeline {
 		stage('Build') {
 			steps {
 			//Get code from GitHub repository
-			git (branch: 'main', url: 'https://github.com/lothoroger/capstone2023fdsfood.git')
+			//git (branch: 'main', url: 'https://github.com/lothoroger/capstone2023fdsfood.git')
 			
 			//Run maven wrapper - 2/20
 			//bat  "mvn compile"
